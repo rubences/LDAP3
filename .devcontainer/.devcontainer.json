@@ -1,0 +1,9 @@
+{
+  "name": "Mi espacio de código",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [389],
+  "postCreateCommand": "pip install ldap3",
+  "extensions": ["ms-python.python"]
+}

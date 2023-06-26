@@ -1,5 +1,11 @@
 version: '3'
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
   openldap:
     image: osixia/openldap:1.4.0
     environment:
@@ -8,3 +14,4 @@ services:
       LDAP_ADMIN_PASSWORD: "admin"
     ports:
       - "389:389"
+
