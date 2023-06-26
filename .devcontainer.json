@@ -1,0 +1,7 @@
+{
+  "name": "Mi espacio de código",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "openldap",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [389]
+}
